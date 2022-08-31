@@ -1,3 +1,10 @@
 This is a NodeJS project setup to test a particular website to see if it can work around some anti-bot technology that is in development.
 
-Some more changes
+This program uses Puppeteer
+
+You must install Puppeteer
+from the project folder enter
+npm i puppeteer
+
+to run the program from the command line
+node index.js
