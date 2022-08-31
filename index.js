@@ -1,5 +1,5 @@
 //
-// A sample node js program that leverages the puppeteer Node library and will...
+// A sample NodeJS program that leverages the puppeteer Node library and will...
 //
 //    * open up a new browser page to scrambledfonts.monotype.com
 //    * fill in the form 
@@ -8,6 +8,10 @@
 //    * close the browser 
 // 
 
+
+
+// Todo:
+// Maybe consider wrapping this in a loop to create multiple accounts
 
 
 const puppeteer = require('puppeteer');
@@ -19,7 +23,10 @@ const puppeteer = require('puppeteer');
         const page = await browser.newPage();
         await page.goto('https://scrambledfonts.monotype.com/');
         
-       
+        // Todo:
+        // figure out a way to automatically detect the required fields
+
+
         // first argument can be id or class name
         await page.type('#FirstName', 'Bryans form testing');
         await page.type('#LastName', 'Bryans form testing');   

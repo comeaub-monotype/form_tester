@@ -1,10 +1,20 @@
-This is a NodeJS project setup to test a particular website to see if it can work around some anti-bot technology that is in development.
+This is a NodeJS project setup to test a particular website to see if it can work
+around some anti-bot technology that is being researched.
 
-This program uses Puppeteer
+This program uses a Node library called Puppeteer which provides a bunch of
+functionality including automated form submission.
 
-You must install Puppeteer
-from the project folder enter
+Setup:
+
+mkdir working_folder
+cd working_folder
+git clone https://github.com/comeaub-monotype/form_tester.git
+cd form_tester
 npm i puppeteer
 
-to run the program from the command line
+Running:
 node index.js
+
+What Happens:
+The program will launch a browser page and go to the URL specified in index.js.
+Once on the page it will use fill in all the required form fields and then click submit.
